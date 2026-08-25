@@ -7061,12 +7061,14 @@ function main() {
       kolmafia.abort("Calibration requires 0 <= min < max, step > 0, fineSteps >= 0, " + "positive integer boards, and 0 <= P(2 gold) <= 1.");
     }
     kolmafia.print("Calibrating ".concat(args.strategy, "/").concat(args.visibility, " on ").concat(args.calibrationBoards, " synthetic mines..."), "blue");
+    var dynamitePrice = resolvePrice(args.dynamitePrice, $item(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["minin' dynamite"]))));
+    var objectDetectionPrice = args.visibility === "high" ? resolvePrice(args.objectDetectionPrice, kolmafia.toItem("potion of detection")) : 0;
     var result = calibrate({
       strategy: args.strategy,
       visibility: args.visibility,
       values,
-      dynamitePrice: resolvePrice(args.dynamitePrice, $item(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["minin' dynamite"])))),
-      objectDetectionPrice: args.visibility === "high" ? resolvePrice(args.objectDetectionPrice, kolmafia.toItem("potion of detection")) : 0,
+      dynamitePrice,
+      objectDetectionPrice,
       min: args.calibrationMin,
       max: args.calibrationMax,
       step: args.calibrationStep,
@@ -7077,7 +7079,7 @@ function main() {
       onProgress: (completed, total, lambda) => kolmafia.print("Calibration ".concat(completed, "/").concat(total, " (").concat(Math.round(100 * completed / total), "%): ") + "lambda=".concat(lambda), "blue")
     });
     kolmafia.print("Calibrated ".concat(args.strategy, "/").concat(args.visibility, " on ").concat(result.sampleSize, " synthetic mines: ") + "lambda=".concat(result.lambda, ", rate=").concat(result.rate.toFixed(1)), "blue");
-    kolmafia.print("Use: goldmine strategy=".concat(args.strategy, " visibility=").concat(args.visibility, " ") + "lambda=".concat(result.lambda), "blue");
+    kolmafia.print("Use: goldmine strategy=".concat(args.strategy, " visibility=").concat(args.visibility, " ") + "lambda=".concat(result.lambda, " oreValue=").concat(values.ore, " goldValue=").concat(values.gold, " ") + "crystalValue=".concat(values.crystal, " dynamitePrice=").concat(dynamitePrice, " ") + "objectDetectionPrice=".concat(objectDetectionPrice), "blue");
     return;
   }
   var stopAtTurn = kolmafia.totalTurnsPlayed() + args.turns;
