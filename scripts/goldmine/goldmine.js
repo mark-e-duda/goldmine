@@ -1904,7 +1904,7 @@ createSingleConstant(kolmafia.Thrall, kolmafia.toThrall);
  */
 createPluralConstant(kolmafia.Thrall);
 
-var _templateObject$8, _templateObject1$4, _templateObject10$4, _templateObject11$4, _templateObject12$4, _templateObject13$4, _templateObject14$3, _templateObject15$3, _templateObject16$3, _templateObject17$3, _templateObject18$3, _templateObject19$3, _templateObject20$3, _templateObject21$3, _templateObject22$3, _templateObject23$3, _templateObject24$3, _templateObject25$3, _templateObject26$3, _templateObject27$3, _templateObject28$3, _templateObject29$3, _templateObject30$3, _templateObject31$3, _templateObject32$2, _templateObject33$2, _templateObject34$2, _templateObject47$2, _templateObject48$2, _templateObject49$1, _templateObject50$1, _templateObject51$1, _templateObject52$1;
+var _templateObject$8, _templateObject1$4, _templateObject10$4, _templateObject11$4, _templateObject12$4, _templateObject13$4, _templateObject14$4, _templateObject15$3, _templateObject16$3, _templateObject17$3, _templateObject18$3, _templateObject19$3, _templateObject20$3, _templateObject21$3, _templateObject22$3, _templateObject23$3, _templateObject24$3, _templateObject25$3, _templateObject26$3, _templateObject27$3, _templateObject28$3, _templateObject29$3, _templateObject30$3, _templateObject31$3, _templateObject32$2, _templateObject33$2, _templateObject34$2, _templateObject47$2, _templateObject48$2, _templateObject49$1, _templateObject50$1, _templateObject51$1, _templateObject52$1;
 /**
  * Determine whether the Skill or Effect provided is an Accordion Thief song
  *
@@ -2063,7 +2063,7 @@ function damageTakenByElement(baseDamage, element) {
   var res = kolmafia.elementalResistance(element);
   return Math.max(1, Math.ceil(baseDamage - baseDamage * res / 100));
 }
-new Map([["standing around flexing their muscles and using grip exercisers", $stat(_templateObject12$4 || (_templateObject12$4 = _taggedTemplateLiteral(["Muscle"])))], ["sitting around playing chess and solving complicated-looking logic puzzles", $stat(_templateObject13$4 || (_templateObject13$4 = _taggedTemplateLiteral(["Mysticality"])))], ["all wearing sunglasses and dancing", $stat(_templateObject14$3 || (_templateObject14$3 = _taggedTemplateLiteral(["Moxie"])))]]);
+new Map([["standing around flexing their muscles and using grip exercisers", $stat(_templateObject12$4 || (_templateObject12$4 = _taggedTemplateLiteral(["Muscle"])))], ["sitting around playing chess and solving complicated-looking logic puzzles", $stat(_templateObject13$4 || (_templateObject13$4 = _taggedTemplateLiteral(["Mysticality"])))], ["all wearing sunglasses and dancing", $stat(_templateObject14$4 || (_templateObject14$4 = _taggedTemplateLiteral(["Moxie"])))]]);
 new Map([["people, all of whom appear to be on fire", $element(_templateObject15$3 || (_templateObject15$3 = _taggedTemplateLiteral(["hot"])))], ["people, surrounded by a cloud of eldritch mist", $element(_templateObject16$3 || (_templateObject16$3 = _taggedTemplateLiteral(["spooky"])))], ["greasy-looking people furtively skulking around", $element(_templateObject17$3 || (_templateObject17$3 = _taggedTemplateLiteral(["sleaze"])))], ["people, surrounded by garbage and clouds of flies", $element(_templateObject18$3 || (_templateObject18$3 = _taggedTemplateLiteral(["stench"])))], ["people, clustered around a group of igloos", $element(_templateObject19$3 || (_templateObject19$3 = _taggedTemplateLiteral(["cold"])))]]);
 new Map([["smoldering bushes on the outskirts of a hedge maze", $element(_templateObject20$3 || (_templateObject20$3 = _taggedTemplateLiteral(["hot"])))], ["creepy-looking black bushes on the outskirts of a hedge maze", $element(_templateObject21$3 || (_templateObject21$3 = _taggedTemplateLiteral(["spooky"])))], ["purplish, greasy-looking hedges", $element(_templateObject22$3 || (_templateObject22$3 = _taggedTemplateLiteral(["sleaze"])))], ["nasty-looking, dripping green bushes on the outskirts of a hedge maze", $element(_templateObject23$3 || (_templateObject23$3 = _taggedTemplateLiteral(["stench"])))], ["frost-rimed bushes on the outskirts of a hedge maze", $element(_templateObject24$3 || (_templateObject24$3 = _taggedTemplateLiteral(["cold"])))]]);
 new Map([["smoke rising from deeper within the maze", $element(_templateObject25$3 || (_templateObject25$3 = _taggedTemplateLiteral(["hot"])))], ["a miasma of eldritch vapors rising from deeper within the maze", $element(_templateObject26$3 || (_templateObject26$3 = _taggedTemplateLiteral(["spooky"])))], ["a greasy purple cloud hanging over the center of the maze", $element(_templateObject27$3 || (_templateObject27$3 = _taggedTemplateLiteral(["sleaze"])))], ["a cloud of green gas hovering over the maze", $element(_templateObject28$3 || (_templateObject28$3 = _taggedTemplateLiteral(["stench"])))], ["wintry mists rising from deeper within the maze", $element(_templateObject29$3 || (_templateObject29$3 = _taggedTemplateLiteral(["cold"])))]]);
@@ -2809,7 +2809,7 @@ _defineProperty(Macro, "SAVED_MACRO_PROPERTY", "libram_savedMacro");
 _defineProperty(Macro, "cachedMacroIds", new Map());
 _defineProperty(Macro, "cachedAutoAttacks", new Map());
 
-var _templateObject$7, _templateObject2$6, _templateObject3$5, _templateObject4$5, _templateObject5$5, _templateObject6$5, _templateObject7$5, _templateObject8$5, _templateObject9$3, _templateObject0$3, _templateObject1$3, _templateObject10$3, _templateObject11$3, _templateObject12$3, _templateObject13$3, _templateObject14$2, _templateObject15$2, _templateObject16$2, _templateObject17$2, _templateObject18$2, _templateObject19$2, _templateObject20$2, _templateObject21$2, _templateObject22$2, _templateObject23$2, _templateObject24$2, _templateObject25$2, _templateObject26$2, _templateObject27$2, _templateObject28$2, _templateObject29$2, _templateObject30$2, _templateObject31$2, _templateObject32$1, _templateObject33$1, _templateObject34$1, _templateObject35$1, _templateObject36$1, _templateObject37$1, _templateObject38$1, _templateObject39$1, _templateObject40$1, _templateObject41$1, _templateObject42$1, _templateObject43$1, _templateObject44$1, _templateObject45$1, _templateObject46$1, _templateObject47$1, _templateObject48$1;
+var _templateObject$7, _templateObject2$6, _templateObject3$5, _templateObject4$5, _templateObject5$5, _templateObject6$5, _templateObject7$5, _templateObject8$5, _templateObject9$3, _templateObject0$3, _templateObject1$3, _templateObject10$3, _templateObject11$3, _templateObject12$3, _templateObject13$3, _templateObject14$3, _templateObject15$2, _templateObject16$2, _templateObject17$2, _templateObject18$2, _templateObject19$2, _templateObject20$2, _templateObject21$2, _templateObject22$2, _templateObject23$2, _templateObject24$2, _templateObject25$2, _templateObject26$2, _templateObject27$2, _templateObject28$2, _templateObject29$2, _templateObject30$2, _templateObject31$2, _templateObject32$1, _templateObject33$1, _templateObject34$1, _templateObject35$1, _templateObject36$1, _templateObject37$1, _templateObject38$1, _templateObject39$1, _templateObject40$1, _templateObject41$1, _templateObject42$1, _templateObject43$1, _templateObject44$1, _templateObject45$1, _templateObject46$1, _templateObject47$1, _templateObject48$1;
 function toMaximizerName(_ref) {
   var name = _ref.name,
     id = _ref.id;
@@ -3087,7 +3087,7 @@ function applyCached(entry, options) {
   if (kolmafia.equippedAmount($item(_templateObject10$3 || (_templateObject10$3 = _taggedTemplateLiteral(["Crown of Thrones"])))) > 0 && entry.rider.get($item(_templateObject11$3 || (_templateObject11$3 = _taggedTemplateLiteral(["Crown of Thrones"]))))) {
     kolmafia.enthroneFamiliar(entry.rider.get($item(_templateObject12$3 || (_templateObject12$3 = _taggedTemplateLiteral(["Crown of Thrones"])))) || $familiar.none);
   }
-  if (kolmafia.equippedAmount($item(_templateObject13$3 || (_templateObject13$3 = _taggedTemplateLiteral(["Buddy Bjorn"])))) > 0 && entry.rider.get($item(_templateObject14$2 || (_templateObject14$2 = _taggedTemplateLiteral(["Buddy Bjorn"]))))) {
+  if (kolmafia.equippedAmount($item(_templateObject13$3 || (_templateObject13$3 = _taggedTemplateLiteral(["Buddy Bjorn"])))) > 0 && entry.rider.get($item(_templateObject14$3 || (_templateObject14$3 = _taggedTemplateLiteral(["Buddy Bjorn"]))))) {
     kolmafia.bjornifyFamiliar(entry.rider.get($item(_templateObject15$2 || (_templateObject15$2 = _taggedTemplateLiteral(["Buddy Bjorn"])))) || $familiar.none);
   }
   applyModes(_objectSpread2(_objectSpread2({}, entry.modes), options.modes));
@@ -3443,7 +3443,7 @@ function sinceKolmafiaRevision(revision) {
   }
 }
 
-var _templateObject$6, _templateObject2$5, _templateObject3$4, _templateObject4$4, _templateObject5$4, _templateObject6$4, _templateObject7$4, _templateObject8$4, _templateObject9$2, _templateObject0$2, _templateObject1$2, _templateObject10$2, _templateObject11$2, _templateObject12$2, _templateObject13$2, _templateObject14$1, _templateObject15$1, _templateObject16$1, _templateObject17$1, _templateObject18$1, _templateObject19$1, _templateObject20$1, _templateObject21$1, _templateObject22$1, _templateObject23$1, _templateObject24$1, _templateObject25$1, _templateObject26$1, _templateObject27$1, _templateObject28$1, _templateObject29$1, _templateObject30$1, _templateObject31$1;
+var _templateObject$6, _templateObject2$5, _templateObject3$4, _templateObject4$4, _templateObject5$4, _templateObject6$4, _templateObject7$4, _templateObject8$4, _templateObject9$2, _templateObject0$2, _templateObject1$2, _templateObject10$2, _templateObject11$2, _templateObject12$2, _templateObject13$2, _templateObject14$2, _templateObject15$1, _templateObject16$1, _templateObject17$1, _templateObject18$1, _templateObject19$1, _templateObject20$1, _templateObject21$1, _templateObject22$1, _templateObject23$1, _templateObject24$1, _templateObject25$1, _templateObject26$1, _templateObject27$1, _templateObject28$1, _templateObject29$1, _templateObject30$1, _templateObject31$1;
 /**
  * Return a mapping of the session items, mapping foldable items to a single of their forms
  *
@@ -3454,7 +3454,7 @@ function mySessionItemsWrapper() {
   var sessionOnly = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
   var manyToOne = (primary, mapped) => mapped.map(target => [target, primary]);
   var foldable = item => manyToOne(item, getFoldGroup(item));
-  var itemMappings = new Map([].concat(_toConsumableArray(foldable($item(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral(["liar's pants"]))))), _toConsumableArray(foldable($item(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["ice pick"]))))), _toConsumableArray(manyToOne($item(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["Spooky Putty sheet"]))), [$item(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral(["Spooky Putty monster"])))].concat(_toConsumableArray(getFoldGroup($item(_templateObject5$4 || (_templateObject5$4 = _taggedTemplateLiteral(["Spooky Putty sheet"])))))))), _toConsumableArray(foldable($item(_templateObject6$4 || (_templateObject6$4 = _taggedTemplateLiteral(["stinky cheese sword"]))))), _toConsumableArray(foldable($item(_templateObject7$4 || (_templateObject7$4 = _taggedTemplateLiteral(["naughty paper shuriken"]))))), _toConsumableArray(foldable($item(_templateObject8$4 || (_templateObject8$4 = _taggedTemplateLiteral(["Loathing Legion knife"]))))), _toConsumableArray(foldable($item(_templateObject9$2 || (_templateObject9$2 = _taggedTemplateLiteral(["deceased crimbo tree"]))))), _toConsumableArray(foldable($item(_templateObject0$2 || (_templateObject0$2 = _taggedTemplateLiteral(["makeshift turban"]))))), _toConsumableArray(foldable($item(_templateObject1$2 || (_templateObject1$2 = _taggedTemplateLiteral(["turtle wax shield"]))))), _toConsumableArray(foldable($item(_templateObject10$2 || (_templateObject10$2 = _taggedTemplateLiteral(["metallic foil bow"]))))), _toConsumableArray(foldable($item(_templateObject11$2 || (_templateObject11$2 = _taggedTemplateLiteral(["ironic moustache"]))))), _toConsumableArray(foldable($item(_templateObject12$2 || (_templateObject12$2 = _taggedTemplateLiteral(["bugged balaclava"]))))), _toConsumableArray(foldable($item(_templateObject13$2 || (_templateObject13$2 = _taggedTemplateLiteral(["toggle switch (Bartend)"]))))), _toConsumableArray(foldable($item(_templateObject14$1 || (_templateObject14$1 = _taggedTemplateLiteral(["mushroom cap"]))))), _toConsumableArray(manyToOne($item(_templateObject15$1 || (_templateObject15$1 = _taggedTemplateLiteral(["can of Rain-Doh"]))), $items(_templateObject16$1 || (_templateObject16$1 = _taggedTemplateLiteral(["empty Rain-Doh can"]))))), _toConsumableArray(manyToOne($item(_templateObject17$1 || (_templateObject17$1 = _taggedTemplateLiteral(["meteorite fragment"]))), $items(_templateObject18$1 || (_templateObject18$1 = _taggedTemplateLiteral(["meteorite earring, meteorite necklace, meteorite ring"]))))), _toConsumableArray(manyToOne($item(_templateObject19$1 || (_templateObject19$1 = _taggedTemplateLiteral(["Sneaky Pete's leather jacket"]))), $items(_templateObject20$1 || (_templateObject20$1 = _taggedTemplateLiteral(["Sneaky Pete's leather jacket (collar popped)"]))))), _toConsumableArray(manyToOne($item(_templateObject21$1 || (_templateObject21$1 = _taggedTemplateLiteral(["Boris's Helm"]))), $items(_templateObject22$1 || (_templateObject22$1 = _taggedTemplateLiteral(["Boris's Helm (askew)"]))))), _toConsumableArray(manyToOne($item(_templateObject23$1 || (_templateObject23$1 = _taggedTemplateLiteral(["Jarlsberg's pan"]))), $items(_templateObject24$1 || (_templateObject24$1 = _taggedTemplateLiteral(["Jarlsberg's pan (Cosmic portal mode)"]))))), _toConsumableArray(manyToOne($item(_templateObject25$1 || (_templateObject25$1 = _taggedTemplateLiteral(["tiny plastic sword"]))), $items(_templateObject26$1 || (_templateObject26$1 = _taggedTemplateLiteral(["grogtini, bodyslam, dirty martini, vesper, cherry bomb, sangria del diablo"]))))), _toConsumableArray(manyToOne($item(_templateObject27$1 || (_templateObject27$1 = _taggedTemplateLiteral(["earthenware muffin tin"]))), $items(_templateObject28$1 || (_templateObject28$1 = _taggedTemplateLiteral(["blueberry muffin, bran muffin, chocolate chip muffin"]))))), _toConsumableArray(manyToOne($item(_templateObject29$1 || (_templateObject29$1 = _taggedTemplateLiteral(["ChibiBuddy\u2122 (on)"]))), $items(_templateObject30$1 || (_templateObject30$1 = _taggedTemplateLiteral(["ChibiBuddy\u2122 (off)"])))))));
+  var itemMappings = new Map([].concat(_toConsumableArray(foldable($item(_templateObject$6 || (_templateObject$6 = _taggedTemplateLiteral(["liar's pants"]))))), _toConsumableArray(foldable($item(_templateObject2$5 || (_templateObject2$5 = _taggedTemplateLiteral(["ice pick"]))))), _toConsumableArray(manyToOne($item(_templateObject3$4 || (_templateObject3$4 = _taggedTemplateLiteral(["Spooky Putty sheet"]))), [$item(_templateObject4$4 || (_templateObject4$4 = _taggedTemplateLiteral(["Spooky Putty monster"])))].concat(_toConsumableArray(getFoldGroup($item(_templateObject5$4 || (_templateObject5$4 = _taggedTemplateLiteral(["Spooky Putty sheet"])))))))), _toConsumableArray(foldable($item(_templateObject6$4 || (_templateObject6$4 = _taggedTemplateLiteral(["stinky cheese sword"]))))), _toConsumableArray(foldable($item(_templateObject7$4 || (_templateObject7$4 = _taggedTemplateLiteral(["naughty paper shuriken"]))))), _toConsumableArray(foldable($item(_templateObject8$4 || (_templateObject8$4 = _taggedTemplateLiteral(["Loathing Legion knife"]))))), _toConsumableArray(foldable($item(_templateObject9$2 || (_templateObject9$2 = _taggedTemplateLiteral(["deceased crimbo tree"]))))), _toConsumableArray(foldable($item(_templateObject0$2 || (_templateObject0$2 = _taggedTemplateLiteral(["makeshift turban"]))))), _toConsumableArray(foldable($item(_templateObject1$2 || (_templateObject1$2 = _taggedTemplateLiteral(["turtle wax shield"]))))), _toConsumableArray(foldable($item(_templateObject10$2 || (_templateObject10$2 = _taggedTemplateLiteral(["metallic foil bow"]))))), _toConsumableArray(foldable($item(_templateObject11$2 || (_templateObject11$2 = _taggedTemplateLiteral(["ironic moustache"]))))), _toConsumableArray(foldable($item(_templateObject12$2 || (_templateObject12$2 = _taggedTemplateLiteral(["bugged balaclava"]))))), _toConsumableArray(foldable($item(_templateObject13$2 || (_templateObject13$2 = _taggedTemplateLiteral(["toggle switch (Bartend)"]))))), _toConsumableArray(foldable($item(_templateObject14$2 || (_templateObject14$2 = _taggedTemplateLiteral(["mushroom cap"]))))), _toConsumableArray(manyToOne($item(_templateObject15$1 || (_templateObject15$1 = _taggedTemplateLiteral(["can of Rain-Doh"]))), $items(_templateObject16$1 || (_templateObject16$1 = _taggedTemplateLiteral(["empty Rain-Doh can"]))))), _toConsumableArray(manyToOne($item(_templateObject17$1 || (_templateObject17$1 = _taggedTemplateLiteral(["meteorite fragment"]))), $items(_templateObject18$1 || (_templateObject18$1 = _taggedTemplateLiteral(["meteorite earring, meteorite necklace, meteorite ring"]))))), _toConsumableArray(manyToOne($item(_templateObject19$1 || (_templateObject19$1 = _taggedTemplateLiteral(["Sneaky Pete's leather jacket"]))), $items(_templateObject20$1 || (_templateObject20$1 = _taggedTemplateLiteral(["Sneaky Pete's leather jacket (collar popped)"]))))), _toConsumableArray(manyToOne($item(_templateObject21$1 || (_templateObject21$1 = _taggedTemplateLiteral(["Boris's Helm"]))), $items(_templateObject22$1 || (_templateObject22$1 = _taggedTemplateLiteral(["Boris's Helm (askew)"]))))), _toConsumableArray(manyToOne($item(_templateObject23$1 || (_templateObject23$1 = _taggedTemplateLiteral(["Jarlsberg's pan"]))), $items(_templateObject24$1 || (_templateObject24$1 = _taggedTemplateLiteral(["Jarlsberg's pan (Cosmic portal mode)"]))))), _toConsumableArray(manyToOne($item(_templateObject25$1 || (_templateObject25$1 = _taggedTemplateLiteral(["tiny plastic sword"]))), $items(_templateObject26$1 || (_templateObject26$1 = _taggedTemplateLiteral(["grogtini, bodyslam, dirty martini, vesper, cherry bomb, sangria del diablo"]))))), _toConsumableArray(manyToOne($item(_templateObject27$1 || (_templateObject27$1 = _taggedTemplateLiteral(["earthenware muffin tin"]))), $items(_templateObject28$1 || (_templateObject28$1 = _taggedTemplateLiteral(["blueberry muffin, bran muffin, chocolate chip muffin"]))))), _toConsumableArray(manyToOne($item(_templateObject29$1 || (_templateObject29$1 = _taggedTemplateLiteral(["ChibiBuddy\u2122 (on)"]))), $items(_templateObject30$1 || (_templateObject30$1 = _taggedTemplateLiteral(["ChibiBuddy\u2122 (off)"])))))));
   var inventory = new Map();
   var invLocations = sessionOnly ? [kolmafia.mySessionItems] : [kolmafia.mySessionItems, kolmafia.getCloset, kolmafia.getDisplay, kolmafia.getStorage];
   if (!sessionOnly) {
@@ -4278,7 +4278,7 @@ var CombatResources = /*#__PURE__*/function () {
   }]);
 }();
 
-var _templateObject$5, _templateObject2$4, _templateObject3$3, _templateObject4$3, _templateObject5$3, _templateObject6$3, _templateObject7$3, _templateObject8$3, _templateObject9$1, _templateObject0$1, _templateObject1$1, _templateObject10$1, _templateObject11$1, _templateObject12$1, _templateObject13$1, _templateObject14, _templateObject15, _templateObject16, _templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27, _templateObject28, _templateObject29, _templateObject30, _templateObject31, _templateObject32, _templateObject33, _templateObject34, _templateObject35, _templateObject36, _templateObject37, _templateObject38, _templateObject39, _templateObject40, _templateObject41, _templateObject42, _templateObject43, _templateObject44, _templateObject45, _templateObject46, _templateObject47, _templateObject48, _templateObject49, _templateObject50, _templateObject51, _templateObject52, _templateObject53, _templateObject54, _templateObject55, _templateObject56, _templateObject57, _templateObject58, _templateObject59, _templateObject60, _templateObject61, _templateObject62, _templateObject63, _templateObject64, _templateObject65, _templateObject66, _templateObject67, _templateObject68, _templateObject69, _templateObject70, _templateObject71, _templateObject72, _templateObject73, _templateObject74, _templateObject75, _templateObject76, _templateObject77, _templateObject78, _templateObject79, _templateObject80;
+var _templateObject$5, _templateObject2$4, _templateObject3$3, _templateObject4$3, _templateObject5$3, _templateObject6$3, _templateObject7$3, _templateObject8$3, _templateObject9$1, _templateObject0$1, _templateObject1$1, _templateObject10$1, _templateObject11$1, _templateObject12$1, _templateObject13$1, _templateObject14$1, _templateObject15, _templateObject16, _templateObject17, _templateObject18, _templateObject19, _templateObject20, _templateObject21, _templateObject22, _templateObject23, _templateObject24, _templateObject25, _templateObject26, _templateObject27, _templateObject28, _templateObject29, _templateObject30, _templateObject31, _templateObject32, _templateObject33, _templateObject34, _templateObject35, _templateObject36, _templateObject37, _templateObject38, _templateObject39, _templateObject40, _templateObject41, _templateObject42, _templateObject43, _templateObject44, _templateObject45, _templateObject46, _templateObject47, _templateObject48, _templateObject49, _templateObject50, _templateObject51, _templateObject52, _templateObject53, _templateObject54, _templateObject55, _templateObject56, _templateObject57, _templateObject58, _templateObject59, _templateObject60, _templateObject61, _templateObject62, _templateObject63, _templateObject64, _templateObject65, _templateObject66, _templateObject67, _templateObject68, _templateObject69, _templateObject70, _templateObject71, _templateObject72, _templateObject73, _templateObject74, _templateObject75, _templateObject76, _templateObject77, _templateObject78, _templateObject79, _templateObject80;
 var FORCE_REFRESH_REQUIREMENT = new Requirement([], {
   forceUpdate: true
 });
@@ -4385,7 +4385,7 @@ var Outfit = /*#__PURE__*/function () {
       if (this.equips.has($slot(_templateObject12$1 || (_templateObject12$1 = _taggedTemplateLiteral(["weapon"])))) && weaponHands(this.equips.get($slot(_templateObject13$1 || (_templateObject13$1 = _taggedTemplateLiteral(["weapon"]))))) !== 1) {
         return false;
       }
-      if (this.equips.has($slot(_templateObject14 || (_templateObject14 = _taggedTemplateLiteral(["off-hand"]))))) return false;
+      if (this.equips.has($slot(_templateObject14$1 || (_templateObject14$1 = _taggedTemplateLiteral(["off-hand"]))))) return false;
       if (!have($skill(_templateObject15 || (_templateObject15 = _taggedTemplateLiteral(["Double-Fisted Skull Smashing"]))))) return false;
       if (weaponHands(item) !== 1) return false;
       if (!kolmafia.canEquip(item)) return false;
@@ -5802,6 +5802,10 @@ var args = Args.create("goldmine", "Selectable strategies for the Velvet / Gold 
     help: "Whether to print explanations for decisions",
     default: false
   }),
+  useMiningOutfit: Args.boolean({
+    help: "Whether to equip the mining drill, medical kit, and optional wrist-puter",
+    default: true
+  }),
   strategy: Args.string({
     help: "Mining strategy: pjb, oreo, ev, or ev-cluster",
     default: "ev-cluster"
@@ -5880,6 +5884,12 @@ var DEFAULT_VALUES = {
   crystal: 69,
   cave: 0
 };
+var MINE_RESULT_IMAGES = {
+  rawvelvet: "ore",
+  goldnugget: "gold",
+  nacrystal1: "crystal",
+  hp: "cave"
+};
 var TARGETS_PER_MINE = 15;
 var ROW_ORE_WEIGHT = [0, 0, 0.1868, 0.4698, 0.6209, 0.67];
 var CLUSTER_ROW_WEIGHT = [0, 0, 0.46, 0.46, 0.46, 1];
@@ -5906,6 +5916,19 @@ function coordinateToIndex(_ref) {
 }
 function indexToCoordinate(index) {
   return [colOf(index) + 1, 6 - rowOf(index)];
+}
+function parseMineLayout(layout) {
+  var results = [];
+  var pattern = /#(\d+)<img[^>]*\/(rawvelvet|goldnugget|nacrystal1|hp)\.gif/g;
+  var match;
+  while ((match = pattern.exec(layout)) !== null) {
+    var which = Number(match[1]);
+    var coordinate = [which % 8, Math.floor(which / 8)];
+    if (coordinate.every(value => value >= 1 && value <= 6)) {
+      results.push([coordinate, MINE_RESULT_IMAGES[match[2]]]);
+    }
+  }
+  return results;
 }
 function statePositionToIndex(position) {
   var gameRow = Math.floor(position / 6);
@@ -6141,12 +6164,28 @@ var StrategyController = /*#__PURE__*/function () {
   }, {
     key: "update",
     value: function update(rawState, hasObjectDetection) {
+      var previouslyMined = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
       if (rawState.length !== 36) {
         throw new Error("Expected 36 mine-state cells, received ".concat(rawState.length));
       }
       this.opened = new Set();
       for (var position = 0; position < rawState.length; position++) {
         if (rawState[position] === "o") this.opened.add(statePositionToIndex(position));
+      }
+      var _iterator1 = _createForOfIteratorHelper(previouslyMined),
+        _step1;
+      try {
+        for (_iterator1.s(); !(_step1 = _iterator1.n()).done;) {
+          var _step1$value = _slicedToArray(_step1.value, 2),
+            coordinate = _step1$value[0],
+            resource = _step1$value[1];
+          var _index5 = coordinateToIndex(coordinate);
+          if (this.opened.has(_index5)) this.observed.set(_index5, resource);
+        }
+      } catch (err) {
+        _iterator1.e(err);
+      } finally {
+        _iterator1.f();
       }
       var fullVisibility = this.visibility !== "low" && hasObjectDetection;
       if (fullVisibility) this.fullMineSeen = true;
@@ -6161,17 +6200,17 @@ var StrategyController = /*#__PURE__*/function () {
           this.knownSparkles.delete(index);
         }
       }
-      var _iterator1 = _createForOfIteratorHelper(this.opened),
-        _step1;
+      var _iterator10 = _createForOfIteratorHelper(this.opened),
+        _step10;
       try {
-        for (_iterator1.s(); !(_step1 = _iterator1.n()).done;) {
-          var _index5 = _step1.value;
-          this.knownSparkles.delete(_index5);
+        for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
+          var _index6 = _step10.value;
+          this.knownSparkles.delete(_index6);
         }
       } catch (err) {
-        _iterator1.e(err);
+        _iterator10.e(err);
       } finally {
-        _iterator1.f();
+        _iterator10.f();
       }
       this.plannedPath = this.plannedPath.filter(index => !this.opened.has(index));
     }
@@ -6269,36 +6308,36 @@ var StrategyController = /*#__PURE__*/function () {
       for (var index = 0; index < 6; index++) {
         if (!this.opened.has(index)) starts.add(index);
       }
-      var _iterator10 = _createForOfIteratorHelper(this.opened),
-        _step10;
-      try {
-        for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
-          var opened = _step10.value;
-          var _iterator12 = _createForOfIteratorHelper(neighbors[opened]),
-            _step12;
-          try {
-            for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
-              var neighbor = _step12.value;
-              if (!this.opened.has(neighbor)) starts.add(neighbor);
-            }
-          } catch (err) {
-            _iterator12.e(err);
-          } finally {
-            _iterator12.f();
-          }
-        }
-      } catch (err) {
-        _iterator10.e(err);
-      } finally {
-        _iterator10.f();
-      }
-      var best = null;
-      var lambda = this.turnValue();
-      var _iterator11 = _createForOfIteratorHelper(this.knownSparkles),
+      var _iterator11 = _createForOfIteratorHelper(this.opened),
         _step11;
       try {
         for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
-          var target = _step11.value;
+          var opened = _step11.value;
+          var _iterator13 = _createForOfIteratorHelper(neighbors[opened]),
+            _step13;
+          try {
+            for (_iterator13.s(); !(_step13 = _iterator13.n()).done;) {
+              var neighbor = _step13.value;
+              if (!this.opened.has(neighbor)) starts.add(neighbor);
+            }
+          } catch (err) {
+            _iterator13.e(err);
+          } finally {
+            _iterator13.f();
+          }
+        }
+      } catch (err) {
+        _iterator11.e(err);
+      } finally {
+        _iterator11.f();
+      }
+      var best = null;
+      var lambda = this.turnValue();
+      var _iterator12 = _createForOfIteratorHelper(this.knownSparkles),
+        _step12;
+      try {
+        for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
+          var target = _step12.value;
           var path = this.shortestPath(starts, target);
           if (!path) continue;
           var reward = ev[target];
@@ -6313,9 +6352,9 @@ var StrategyController = /*#__PURE__*/function () {
           }
         }
       } catch (err) {
-        _iterator11.e(err);
+        _iterator12.e(err);
       } finally {
-        _iterator11.f();
+        _iterator12.f();
       }
       if (!best) {
         return this.opened.size === 0 ? {
@@ -6359,17 +6398,17 @@ var StrategyController = /*#__PURE__*/function () {
       var ore = 0;
       var crystal = 0;
       var gold = 0;
-      var _iterator13 = _createForOfIteratorHelper(this.observed.values()),
-        _step13;
+      var _iterator14 = _createForOfIteratorHelper(this.observed.values()),
+        _step14;
       try {
-        for (_iterator13.s(); !(_step13 = _iterator13.n()).done;) {
-          var type = _step13.value;
+        for (_iterator14.s(); !(_step14 = _iterator14.n()).done;) {
+          var type = _step14.value;
           if (type === "ore") ore++;else if (type === "crystal") crystal++;else if (type === "gold") gold++;
         }
       } catch (err) {
-        _iterator13.e(err);
+        _iterator14.e(err);
       } finally {
-        _iterator13.f();
+        _iterator14.f();
       }
       var oreRemaining = Math.max(0, 6 - ore);
       var crystalRemaining = Math.max(0, 3 - crystal);
@@ -6392,35 +6431,35 @@ var StrategyController = /*#__PURE__*/function () {
       if (this.fullMineSeen) {
         var eligible = targets.filter(index => rowOf(index) >= 2 && neighbors[index].some(neighbor => this.observed.get(neighbor) === "ore" || this.knownSparkles.has(neighbor)));
         var weightTotal = eligible.reduce((sum, index) => sum + ROW_ORE_WEIGHT[rowOf(index)], 0);
-        var _iterator14 = _createForOfIteratorHelper(eligible),
-          _step14;
+        var _iterator15 = _createForOfIteratorHelper(eligible),
+          _step15;
         try {
-          for (_iterator14.s(); !(_step14 = _iterator14.n()).done;) {
-            var index = _step14.value;
+          for (_iterator15.s(); !(_step15 = _iterator15.n()).done;) {
+            var index = _step15.value;
             oreProbability.set(index, weightTotal > 0 ? Math.min(1, counts.oreRemaining * ROW_ORE_WEIGHT[rowOf(index)] / weightTotal) : 0);
           }
         } catch (err) {
-          _iterator14.e(err);
+          _iterator15.e(err);
         } finally {
-          _iterator14.f();
+          _iterator15.f();
         }
       }
-      var _iterator15 = _createForOfIteratorHelper(targets),
-        _step15;
+      var _iterator16 = _createForOfIteratorHelper(targets),
+        _step16;
       try {
-        for (_iterator15.s(); !(_step15 = _iterator15.n()).done;) {
-          var _index6 = _step15.value;
-          var pOre = oreProbability.get(_index6) ?? 0;
-          if (!this.fullMineSeen && rowOf(_index6) >= 2 && counts.oreRemaining > 0) {
-            var adjacentPossibleOre = neighbors[_index6].some(neighbor => this.observed.get(neighbor) === "ore" || !this.opened.has(neighbor) && rowOf(neighbor) >= 2);
-            pOre = Math.min(1, ROW_ORE_WEIGHT[rowOf(_index6)] * (adjacentPossibleOre ? 1 : 0.3));
+        for (_iterator16.s(); !(_step16 = _iterator16.n()).done;) {
+          var _index7 = _step16.value;
+          var pOre = oreProbability.get(_index7) ?? 0;
+          if (!this.fullMineSeen && rowOf(_index7) >= 2 && counts.oreRemaining > 0) {
+            var adjacentPossibleOre = neighbors[_index7].some(neighbor => this.observed.get(neighbor) === "ore" || !this.opened.has(neighbor) && rowOf(neighbor) >= 2);
+            pOre = Math.min(1, ROW_ORE_WEIGHT[rowOf(_index7)] * (adjacentPossibleOre ? 1 : 0.3));
           }
-          result[_index6] = this.nonOreAdjustedValue(pOre, counts);
+          result[_index7] = this.nonOreAdjustedValue(pOre, counts);
         }
       } catch (err) {
-        _iterator15.e(err);
+        _iterator16.e(err);
       } finally {
-        _iterator15.f();
+        _iterator16.f();
       }
       return result;
     }
@@ -6429,60 +6468,60 @@ var StrategyController = /*#__PURE__*/function () {
     value: function clusterExpectedValues() {
       var knownOre = new Set();
       var knownNonOre = new Set();
-      var _iterator16 = _createForOfIteratorHelper(this.observed),
-        _step16;
-      try {
-        for (_iterator16.s(); !(_step16 = _iterator16.n()).done;) {
-          var _step16$value = _slicedToArray(_step16.value, 2),
-            index = _step16$value[0],
-            type = _step16$value[1];
-          if (type === "ore") knownOre.add(index);else knownNonOre.add(index);
-        }
-      } catch (err) {
-        _iterator16.e(err);
-      } finally {
-        _iterator16.f();
-      }
-      var _iterator17 = _createForOfIteratorHelper(this.knownDull),
+      var _iterator17 = _createForOfIteratorHelper(this.observed),
         _step17;
       try {
         for (_iterator17.s(); !(_step17 = _iterator17.n()).done;) {
-          var _index7 = _step17.value;
-          knownNonOre.add(_index7);
+          var _step17$value = _slicedToArray(_step17.value, 2),
+            index = _step17$value[0],
+            type = _step17$value[1];
+          if (type === "ore") knownOre.add(index);else knownNonOre.add(index);
         }
       } catch (err) {
         _iterator17.e(err);
       } finally {
         _iterator17.f();
       }
-      var _iterator18 = _createForOfIteratorHelper(this.opened),
+      var _iterator18 = _createForOfIteratorHelper(this.knownDull),
         _step18;
       try {
         for (_iterator18.s(); !(_step18 = _iterator18.n()).done;) {
           var _index8 = _step18.value;
-          if (!knownOre.has(_index8)) knownNonOre.add(_index8);
+          knownNonOre.add(_index8);
         }
       } catch (err) {
         _iterator18.e(err);
       } finally {
         _iterator18.f();
       }
-      var subset = this.fullMineSeen ? new Set([].concat(_toConsumableArray(this.knownSparkles), _toConsumableArray(knownOre))) : null;
-      var pOre = clusterOrePosterior(knownOre, knownNonOre, subset);
-      var targetCount = this.fullMineSeen ? this.knownSparkles.size : TARGETS_PER_MINE - this.observed.size;
-      var counts = this.remainingCounts(targetCount);
-      var result = Array(36).fill(0);
-      var _iterator19 = _createForOfIteratorHelper(this.knownSparkles),
+      var _iterator19 = _createForOfIteratorHelper(this.opened),
         _step19;
       try {
         for (_iterator19.s(); !(_step19 = _iterator19.n()).done;) {
           var _index9 = _step19.value;
-          result[_index9] = this.nonOreAdjustedValue(counts.oreRemaining > 0 ? pOre[_index9] : 0, counts);
+          if (!knownOre.has(_index9)) knownNonOre.add(_index9);
         }
       } catch (err) {
         _iterator19.e(err);
       } finally {
         _iterator19.f();
+      }
+      var subset = this.fullMineSeen ? new Set([].concat(_toConsumableArray(this.knownSparkles), _toConsumableArray(knownOre))) : null;
+      var pOre = clusterOrePosterior(knownOre, knownNonOre, subset);
+      var targetCount = this.fullMineSeen ? this.knownSparkles.size : TARGETS_PER_MINE - this.observed.size;
+      var counts = this.remainingCounts(targetCount);
+      var result = Array(36).fill(0);
+      var _iterator20 = _createForOfIteratorHelper(this.knownSparkles),
+        _step20;
+      try {
+        for (_iterator20.s(); !(_step20 = _iterator20.n()).done;) {
+          var _index0 = _step20.value;
+          result[_index0] = this.nonOreAdjustedValue(counts.oreRemaining > 0 ? pOre[_index0] : 0, counts);
+        }
+      } catch (err) {
+        _iterator20.e(err);
+      } finally {
+        _iterator20.f();
       }
       return result;
     }
@@ -6500,17 +6539,17 @@ var StrategyController = /*#__PURE__*/function () {
     value: function shortestPath(starts, target) {
       var queue = _toConsumableArray(starts);
       var parent = new Map();
-      var _iterator20 = _createForOfIteratorHelper(starts),
-        _step20;
+      var _iterator21 = _createForOfIteratorHelper(starts),
+        _step21;
       try {
-        for (_iterator20.s(); !(_step20 = _iterator20.n()).done;) {
-          var start = _step20.value;
+        for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
+          var start = _step21.value;
           parent.set(start, null);
         }
       } catch (err) {
-        _iterator20.e(err);
+        _iterator21.e(err);
       } finally {
-        _iterator20.f();
+        _iterator21.f();
       }
       for (var cursor = 0; cursor < queue.length; cursor++) {
         var current = queue[cursor];
@@ -6521,19 +6560,19 @@ var StrategyController = /*#__PURE__*/function () {
           }
           return path;
         }
-        var _iterator21 = _createForOfIteratorHelper(neighbors[current]),
-          _step21;
+        var _iterator22 = _createForOfIteratorHelper(neighbors[current]),
+          _step22;
         try {
-          for (_iterator21.s(); !(_step21 = _iterator21.n()).done;) {
-            var neighbor = _step21.value;
+          for (_iterator22.s(); !(_step22 = _iterator22.n()).done;) {
+            var neighbor = _step22.value;
             if (this.opened.has(neighbor) || parent.has(neighbor)) continue;
             parent.set(neighbor, current);
             queue.push(neighbor);
           }
         } catch (err) {
-          _iterator21.e(err);
+          _iterator22.e(err);
         } finally {
-          _iterator21.f();
+          _iterator22.f();
         }
       }
       return null;
@@ -6888,7 +6927,7 @@ function resolvePrice(value, item) {
   return price;
 }
 
-var _templateObject$1, _templateObject2$1, _templateObject3$1, _templateObject4$1, _templateObject5$1, _templateObject6$1, _templateObject7$1, _templateObject8$1, _templateObject9, _templateObject0, _templateObject1, _templateObject10, _templateObject11, _templateObject12, _templateObject13;
+var _templateObject$1, _templateObject2$1, _templateObject3$1, _templateObject4$1, _templateObject5$1, _templateObject6$1, _templateObject7$1, _templateObject8$1, _templateObject9, _templateObject0, _templateObject1, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14;
 var gold = $item(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["1,970 carat gold"])));
 var velvet = $item(_templateObject2$1 || (_templateObject2$1 = _taggedTemplateLiteral(["unsmoothed velvet"])));
 var crystal = $item(_templateObject3$1 || (_templateObject3$1 = _taggedTemplateLiteral(["New Age healing crystal"])));
@@ -6911,9 +6950,10 @@ function buildMiningTasks(controller, accounting) {
     equip: [$item(_templateObject5$1 || (_templateObject5$1 = _taggedTemplateLiteral(["high-temperature mining drill"]))), $item(_templateObject6$1 || (_templateObject6$1 = _taggedTemplateLiteral(["hippy medical kit"])))],
     modifier: "Hot Resistance"
   };
+  var taskOutfit = args.useMiningOutfit ? miningOutfit : undefined;
   var pendingDecision = null;
   var selectDecision = () => {
-    controller.update(getState(Mine.VOLCANO), hasObjectDetection(Mine.VOLCANO));
+    controller.update(getState(Mine.VOLCANO), hasObjectDetection(Mine.VOLCANO), parseMineLayout(get("mineLayout6")));
     pendingDecision = controller.decide();
     return pendingDecision;
   };
@@ -6951,7 +6991,7 @@ function buildMiningTasks(controller, accounting) {
     name: "Move to a new cavern having struck gold in this cavern",
     after: ["Acquire mining drill", "Acquire hippy medical kit"],
     noCombat: true,
-    outfit: miningOutfit,
+    outfit: taskOutfit,
     ready: () => controller.shouldResetAfterGold() && get("mineLayout6").includes("goldnugget"),
     prepare: () => assureHotResistance(),
     do: () => {
@@ -6974,7 +7014,7 @@ function buildMiningTasks(controller, accounting) {
     name: "Move to a new cavern when the strategy has no worthwhile target",
     after: ["Acquire mining drill", "Acquire hippy medical kit"],
     noCombat: true,
-    outfit: miningOutfit,
+    outfit: taskOutfit,
     ready: () => selectDecision().action === "reset",
     prepare: () => assureHotResistance(),
     do: () => resetCavern(),
@@ -6983,15 +7023,20 @@ function buildMiningTasks(controller, accounting) {
     name: "Mine the strategy's selected coordinate",
     after: ["Acquire mining drill", "Acquire hippy medical kit"],
     noCombat: true,
-    outfit: () => _objectSpread2(_objectSpread2({}, miningOutfit), {}, {
+    outfit: args.useMiningOutfit ? () => _objectSpread2(_objectSpread2({}, miningOutfit), {}, {
       equip: [].concat(_toConsumableArray(miningOutfit.equip), _toConsumableArray(have($item(_templateObject12 || (_templateObject12 = _taggedTemplateLiteral(["Xiblaxian holo-wrist-puter"])))) && !get("_holoWristCrystal") ? [$item(_templateObject13 || (_templateObject13 = _taggedTemplateLiteral(["Xiblaxian holo-wrist-puter"])))] : []))
-    }),
+    }) : undefined,
     acquire: controller.shouldUseDynamite() ? [{
       item: dynamite,
       optional: true
     }] : [],
     ready: () => selectDecision().action === "mine",
-    prepare: () => prepareToMine(),
+    prepare: () => {
+      if (!args.useMiningOutfit && kolmafia.equippedAmount($item(_templateObject14 || (_templateObject14 = _taggedTemplateLiteral(["high-temperature mining drill"])))) === 0) {
+        kolmafia.abort("The current outfit must include a high-temperature mining drill.");
+      }
+      prepareToMine();
+    },
     do: () => {
       var decision = pendingDecision;
       if (!decision || decision.action !== "mine") {
