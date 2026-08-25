@@ -1713,7 +1713,7 @@ createPluralConstant(kolmafia.Class);
  *
  * @category In-game constant
  */
-createSingleConstant(kolmafia.Coinmaster, kolmafia.toCoinmaster);
+var $coinmaster = createSingleConstant(kolmafia.Coinmaster, kolmafia.toCoinmaster);
 /**
  * A list of Coinmasters specified by a comma-separated list of names.
  * For a list of all possible Coinmasters, leave the template string blank.
@@ -7127,19 +7127,22 @@ function main() {
     return;
   }
   var stopAtTurn = kolmafia.totalTurnsPlayed() + args.turns;
+  var accessError = kolmafia.inaccessibleReason($coinmaster(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["Disco GiftCo"]))));
+  if (accessError) kolmafia.abort(accessError);
 
   // Make sure the mine state is up to date
   visit(Mine.VOLCANO);
+  if (getState(Mine.VOLCANO).length !== 36) {
+    kolmafia.abort("Could not access the Velvet / Gold Mine.");
+  }
   var accounting = {
-    values: new Map([[$item(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["unsmoothed velvet"]))), values.ore], [$item(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["1,970 carat gold"]))), values.gold], [$item(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["New Age healing crystal"]))), values.crystal]]),
+    values: new Map([[$item(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["unsmoothed velvet"]))), values.ore], [$item(_templateObject7 || (_templateObject7 = _taggedTemplateLiteral(["1,970 carat gold"]))), values.gold], [$item(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["New Age healing crystal"]))), values.crystal]]),
     costs: new Map(),
     used: new Map()
   };
   var quest = {
     name: "Goldmine",
-    ready: () =>
-    // Indicative of access to the 70s Volcano
-    kolmafia.canAdventure($location(_templateObject8 || (_templateObject8 = _taggedTemplateLiteral(["The SMOOCH Army HQ"])))) && kolmafia.myInebriety() <= kolmafia.inebrietyLimit() && (kolmafia.myAdventures() > 0 || countFreeMines() > 0),
+    ready: () => kolmafia.myInebriety() <= kolmafia.inebrietyLimit() && (kolmafia.myAdventures() > 0 || countFreeMines() > 0),
     completed: () => kolmafia.totalTurnsPlayed() >= stopAtTurn && countFreeMines() === 0,
     tasks: buildMiningTasks(new StrategyController(args.strategy, args.visibility, args.lambda, values), accounting)
   };
