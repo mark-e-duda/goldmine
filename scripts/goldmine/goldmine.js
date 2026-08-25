@@ -6988,7 +6988,6 @@ function buildMiningTasks(controller, accounting) {
     }),
     acquire: controller.shouldUseDynamite() ? [{
       item: dynamite,
-      price: dynamitePrice,
       optional: true
     }] : [],
     ready: () => selectDecision().action === "mine",
