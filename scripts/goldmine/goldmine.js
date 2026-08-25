@@ -5852,7 +5852,7 @@ var args = Args.create("goldmine", "Selectable strategies for the Velvet / Gold 
   }),
   calibrationBoards: Args.number({
     help: "Number of deterministic synthetic mines to calibrate against",
-    default: 4000
+    default: 1000
   }),
   calibrationSeed: Args.number({
     help: "Synthetic calibration board seed",
