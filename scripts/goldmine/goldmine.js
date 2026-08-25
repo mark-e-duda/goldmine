@@ -6612,7 +6612,8 @@ function calibrate(options) {
     fineSteps = options.fineSteps,
     boardCount = options.boardCount,
     seed = options.seed,
-    secondGoldChance = options.secondGoldChance;
+    secondGoldChance = options.secondGoldChance,
+    onProgress = options.onProgress;
   if (strategy !== "ev" && strategy !== "ev-cluster") {
     throw new Error("Calibration is only available for EV strategies.");
   }
@@ -6636,13 +6637,21 @@ function calibrate(options) {
     rates.set(lambda, result);
     return result;
   };
-  var best = coarse.reduce((a, b) => rate(b) > rate(a) ? b : a);
+  var total = coarse.length + fineSteps;
+  var completed = 0;
+  var best = coarse[0];
+  for (var _i = 0, _coarse = coarse; _i < _coarse.length; _i++) {
+    var _lambda = _coarse[_i];
+    if (rate(_lambda) > rate(best)) best = _lambda;
+    onProgress === null || onProgress === void 0 || onProgress(++completed, total, _lambda);
+  }
   var bestIndex = coarse.indexOf(best);
   var low = coarse[Math.max(0, bestIndex - 1)];
   var high = coarse[Math.min(coarse.length - 1, bestIndex + 1)];
   for (var point = 1; point <= fineSteps; point++) {
-    var _lambda = Math.round(low + (high - low) * point / (fineSteps + 1));
-    if (rate(_lambda) > rate(best)) best = _lambda;
+    var _lambda2 = Math.round(low + (high - low) * point / (fineSteps + 1));
+    if (rate(_lambda2) > rate(best)) best = _lambda2;
+    onProgress === null || onProgress === void 0 || onProgress(++completed, total, _lambda2);
   }
   return {
     lambda: best,
@@ -7000,6 +7009,7 @@ function main() {
     if (args.calibrationMin < 0 || args.calibrationMax <= args.calibrationMin || args.calibrationStep <= 0 || args.calibrationFineSteps < 0 || !Number.isInteger(args.calibrationBoards) || args.calibrationBoards <= 0 || args.calibrationSecondGoldChance < 0 || args.calibrationSecondGoldChance > 1) {
       kolmafia.abort("Calibration requires 0 <= min < max, step > 0, fineSteps >= 0, " + "positive integer boards, and 0 <= P(2 gold) <= 1.");
     }
+    kolmafia.print("Calibrating ".concat(args.strategy, "/").concat(args.visibility, " on ").concat(args.calibrationBoards, " synthetic mines..."), "blue");
     var result = calibrate({
       strategy: args.strategy,
       visibility: args.visibility,
@@ -7012,7 +7022,8 @@ function main() {
       fineSteps: args.calibrationFineSteps,
       boardCount: args.calibrationBoards,
       seed: args.calibrationSeed,
-      secondGoldChance: args.calibrationSecondGoldChance
+      secondGoldChance: args.calibrationSecondGoldChance,
+      onProgress: (completed, total, lambda) => kolmafia.print("Calibration ".concat(completed, "/").concat(total, " (").concat(Math.round(100 * completed / total), "%): ") + "lambda=".concat(lambda), "blue")
     });
     kolmafia.print("Calibrated ".concat(args.strategy, "/").concat(args.visibility, " on ").concat(result.sampleSize, " synthetic mines: ") + "lambda=".concat(result.lambda, ", rate=").concat(result.rate.toFixed(1)), "blue");
     kolmafia.print("Use: goldmine strategy=".concat(args.strategy, " visibility=").concat(args.visibility, " ") + "lambda=".concat(result.lambda), "blue");
