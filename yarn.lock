@@ -3808,9 +3808,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"oreo@workspace:.":
+"goldmine@workspace:.":
   version: 0.0.0-use.local
-  resolution: "oreo@workspace:."
+  resolution: "goldmine@workspace:."
   dependencies:
     "@babel/core": "npm:^7.29.7"
     "@babel/preset-env": "npm:^7.29.7"
